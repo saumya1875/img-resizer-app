@@ -8,7 +8,41 @@ import io
 hide_streamlit_cloud_elements = """
     <style>
     #MainMenu {visibility: hidden;}
+   hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display: none;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
+
+
+[theme]
+base = "dark"
+primaryColor = "#1DB954"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#FAFAFA"
+font = "sans serif"
+
+
+
+import streamlit as st
+
+hide_streamlit_cloud_elements = """
+    <style>
+    #MainMenu {visibility: hidden;}
     header {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display: none;}
+    a[title="View source"] {display: none !important;}
+    button[kind="icon"] {display: none !important;}
+    </style>
+"""
+st.markdown(hide_streamlit_cloud_elements, unsafe_allow_html=True) header {visibility: hidden;}
     footer {visibility: hidden;}
     .stDeployButton {display: none;}
     a[title="View source"] {display: none !important;}
